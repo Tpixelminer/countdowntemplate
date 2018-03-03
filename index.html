@@ -32,13 +32,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + "days " + hours + "horus "
+  + minutes + "minuites " + seconds + "seconds ";
 
   // YEET 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "NO MORE";
+    document.getElementById("demo").innerHTML = "We made it!";
   }
 }, 1000);
 </script>
